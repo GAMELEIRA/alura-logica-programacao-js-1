@@ -1,19 +1,23 @@
 <!--
     AUTOR:GABRIEL GAMELEIRA DOS SANTOS 
     DATA:06/03/2020
-    HORA:18:02
-    FINALIDADE DO PROGRAMA: JOGO PARA ADVINHAR UM NÚMERO
+    HORA:19:43
+    FINALIDADE DO PROGRAMA: CALCULAR A QUANTIDADE DE COPAS
  -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advinha</title>
+    <title>Document</title>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
 <script>
@@ -32,18 +36,22 @@
 
     }
 
-    let numeroPensado = Math.round(Math.random() * 10);
+    let anoCopa = 1938;
 
-    let chute = Number.parseInt(prompt("Digite seu chute!"));
+    while (anoCopa <= 2016) {
 
-    if (chute == numeroPensado) {
+        alert("Teve copa em " + anoCopa);
 
-        mostra("Você acertou!");
-
-    } else if (numeroPensado != chute) {
-
-        mostra("Você errou, o número pensado foi " + numeroPensado);
+        anoCopa += 4;
 
     }
+
+    for (let multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+         
+
+    }
+
+    alert("Fim");
 
 </script>
