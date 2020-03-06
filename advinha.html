@@ -1,0 +1,38 @@
+<!--
+    AUTOR:GABRIEL GAMELEIRA DOS SANTOS 
+    DATA:06/03/2020
+    HORA:18:02
+    FINALIDADE DO PROGRAMA: CALCULAR O IMC
+ -->
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+
+        pulaLinha();
+
+    }
+
+    let numeroPensado = Math.random() * 10;
+
+    let chute = Number.parseInt(prompt("Digite seu chute!"));
+
+    if (chute == numeroPensado) {
+
+        mostra("Você acertou!");
+
+    } else if (numeroPensado != chute) {
+
+        mostra("Você errou, o número pensado foi " + numeroPensado);
+
+    }
+
+</script>
