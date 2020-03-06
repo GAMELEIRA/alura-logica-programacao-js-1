@@ -20,25 +20,35 @@
 
     }
 
+    function mostra(frase){
+
+        document.write(frase);
+
+        pulaLinha();
+
+    }
 
     let ano;
 
     ano = 2016;
 
-    document.write("Flávio tem " + (ano - 1997) + " anos");
+    //document.write("Flávio tem " + (ano - 1997) + " anos");
 
-    pulaLinha();
+    mostra("Flávio tem " + (ano - 1997) + " anos");
 
-    document.write("Joaquim tem " + (ano - 1966) + " anos");
+    //document.write("Joaquim tem " + (ano - 1966) + " anos");
 
-    pulaLinha();
+    mostra("Joaquim tem " + (ano - 1966) + " anos");
 
-    document.write("Barney tem " + (ano - 1976) + " anos");
 
-    pulaLinha();
+    //document.write("Barney tem " + (ano - 1976) + " anos");
+
+    mostra("Barney tem " + (ano - 1976) + " anos");
 
     let idadeMedia = (39 + 20 + 41) / 3;
 
-    document.write("A média das idades " + Math.round(idadeMedia));
+    //document.write("A média das idades " + Math.round(idadeMedia));
+
+    mostra("A média das idades " + Math.round(idadeMedia));
 
 </script>
