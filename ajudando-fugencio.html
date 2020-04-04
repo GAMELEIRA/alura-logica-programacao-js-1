@@ -8,7 +8,21 @@ FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA EXIBIR IDADES
 <meta charset="UTF-8">
 
 <script>
-    document.write("Flávio nasceu em " + (2016 - 39) + "<br>");
-    document.write("Joaquim nasceu em " + (2016 - 20) + "<br>");
-    document.write("Barney nasceu em " + (2016 - 40) + "<br>");
+    const ano = 2016;
+
+    window.document.write("Flávio nasceu em " + (ano - 1977) + "anos." + "<br>");
+
+    window.document.write("Joaquim nasceu em " + (ano - 1996) + "anos." + "<br>");
+
+    window.document.write("Barney nasceu em " + (ano - 1976) + "anos." + "<br>");
+
+    let idade_flavio = 39;
+
+    let idade_joaquim = 20;
+
+    let idade_barney = 41;
+
+    const media = (idade_flavio + idade_joaquim + idade_barney) / 3;
+
+    window.document.write("A media das idades é " + Math.round(media));
 </script>
