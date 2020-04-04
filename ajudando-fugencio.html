@@ -8,21 +8,48 @@ FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA EXIBIR IDADES
 <meta charset="UTF-8">
 
 <script>
+    function pulaLinha() {
+
+        window.document.write("<br>");
+
+        window.document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+
+    }
+
     const ano = 2016;
 
-    window.document.write("Flávio nasceu em " + (ano - 1977) + "anos." + "<br>");
+    // window.document.write("Flávio têm" + (ano - 1977) + "anos.");
 
-    window.document.write("Joaquim nasceu em " + (ano - 1996) + "anos." + "<br>");
+    mostra("Flávio têm " + (ano - 1977) + " anos.");
 
-    window.document.write("Barney nasceu em " + (ano - 1976) + "anos." + "<br>");
+    pulaLinha();
 
-    let idade_flavio = 39;
+    //window.document.write("Joaquim têm " + (ano - 1996) + "anos.");
 
-    let idade_joaquim = 20;
+    mostra("Flávio têm " + (ano - 1977) + " anos.");
 
-    let idade_barney = 41;
+    pulaLinha();
 
-    const media = (idade_flavio + idade_joaquim + idade_barney) / 3;
+    //window.document.write("Barney têm " + (ano - 1976) + "anos.");
 
-    window.document.write("A media das idades é " + Math.round(media));
+    mostra("Barney têm " + (ano - 1976) + " anos.");
+
+    pulaLinha();
+
+
+    // let idade_flavio = 39;
+
+    // let idade_joaquim = 20;
+
+    // let idade_barney = 41;
+
+    // const media = (idade_flavio + idade_joaquim + idade_barney) / 3;
+
+    //  window.document.write("A media das idades é " + Math.round(media));
 </script>
