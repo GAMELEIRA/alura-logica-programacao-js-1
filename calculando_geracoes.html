@@ -1,0 +1,43 @@
+<!--
+AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+DATA:03/04/2020
+HORA:13:44
+FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA EXIBIR A DIFERENCA ENTRE IDADES
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula gerações</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    const media_para_ter_filhos = 28;
+
+    const descoberta_do_brasil = 1500;
+
+    const ano_atual = 2020;
+
+    function calculaGeracoes(descoberta_do_brasil, ano_atual, media_para_ter_filhos) {
+
+        const geracoes = (ano_atual - descoberta_do_brasil) / media_para_ter_filhos;
+
+        return geracoes;
+
+    }
+
+    function mostraMensagem(descoberta_do_brasil, ano_atual, media_para_ter_filhos) {
+
+        document.write("Gerações desde 1500 é: " + Math.round(calculaGeracoes(descoberta_do_brasil, ano_atual, media_para_ter_filhos)));
+
+    }
+
+    mostraMensagem(descoberta_do_brasil, ano_atual, media_para_ter_filhos);
+</script>
