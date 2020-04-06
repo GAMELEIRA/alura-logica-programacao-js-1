@@ -20,6 +20,7 @@ FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA IMPRIMIR VALORES ATÉ 100
 
 </html>
 <script>
+
     function pulaLinha() {
 
         window.document.write("<br>");
@@ -42,16 +43,20 @@ FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA IMPRIMIR VALORES ATÉ 100
 
     while (valor_inicial <= valor_final) {
 
-        if (valor_inicial == 33 || valor_inicial == 37) {
-
-            mostraFrase(valor_inicial);
+        if(valor_inicial == 33 || valor_inicial == 37){
 
             valor_inicial++;
 
+            continue;
+
         }
+
+        mostraFrase(valor_inicial);
+
+        valor_inicial++;
 
     }
 
-    mostra("Fim!");
+    mostraFrase("Fim!");
 
 </script>
