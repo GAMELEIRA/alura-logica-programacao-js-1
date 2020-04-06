@@ -1,0 +1,52 @@
+<!--
+AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+DATA:03/04/2020
+HORA:13:44
+FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA CALCULAR O IMC
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o IMC</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function pulaLinha(){
+
+        window.document.write("<br>");
+
+        window.document.write("<br>");
+
+    }
+
+    function mostraFrase(frase){
+
+        window.document.write(frase);
+        
+        pulaLinha();
+
+    }
+
+    function calculaImc(peso, altura){
+
+        const imc = peso / (altura * altura);
+
+        return imc;
+
+    }
+
+    const peso = window.prompt("Informe o seu peso:");
+
+    const altura = window.prompt("Informe a sua altura:");
+
+    const imc = calculaImc(peso, altura);
+
+    mostraFrase(imc);
+
+</script>

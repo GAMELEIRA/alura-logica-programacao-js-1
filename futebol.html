@@ -1,0 +1,60 @@
+<!--
+AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+DATA:03/04/2020
+HORA:09:01
+FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA CALCULAR OS PONTOS DE UM TIME
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    function pulaLinha() {
+
+        window.document.write("<br>");
+
+        window.document.write("<br>");
+
+    }
+
+    function mostraFrase(frase) {
+
+        window.document.write(frase);
+
+        pulaLinha();
+
+    }
+
+    const vitorias = parseInt(window.prompt("Informe o número de vitórias:"));
+
+    const empates = parseInt(window.prompt("Informe o número de empates:"));
+
+    const pontos = vitorias * 3 + empates;
+
+    mostraFrase("Os pontos do seu time é: " + pontos);
+
+    if (pontos > 28) {
+
+        mostraFrase("Seu time está melhor que o ano passado!");
+
+    } else if (pontos < 28) {
+
+        mostraFrase("Seu time está pior que o ano passado!");
+
+    } else {
+
+        mostraFrase("Seu time está igual que o ano passado!");
+        
+    }
+</script>
