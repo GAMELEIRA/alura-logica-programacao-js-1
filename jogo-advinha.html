@@ -1,0 +1,51 @@
+<!--
+AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+DATA:03/04/2020
+HORA:13:44
+FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA CALCULAR O IMC
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo advinha</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    function pulaLinha() {
+
+        window.document.write("<br>");
+
+        window.document.write("<br>");
+
+    }
+
+    function mostraFrase(frase) {
+
+        window.document.write(frase);
+
+        pulaLinha();
+
+    }
+
+    let numeroPensado = Math.round(Math.random() * 10);
+
+    let chute = parseInt(window.prompt("Digite seu chute!"));
+
+    if (chute == numeroPensado) {
+
+       window.document.write("Você acertou!");
+
+    } else {
+
+        window.document.write("Você errou! O número pensado foi " + numeroPensado);
+
+    }
+</script>
