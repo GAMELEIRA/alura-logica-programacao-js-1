@@ -1,0 +1,53 @@
+<!--
+AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+DATA:06/04/2020
+HORA:10:57
+FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA IMPRIMIR VALORES ATÉ 100
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+    function pulaLinha() {
+
+        window.document.write("<br>");
+
+        window.document.write("<br>");
+
+    }
+
+    function mostraFrase(frase) {
+
+        window.document.write(frase);
+
+        pulaLinha();
+
+    }
+
+
+    let contator = 0;
+
+    while (contator < 100) {
+
+        contator += 2;
+
+        mostraFrase(contator);
+
+    }
+
+    mostraFrase("Fim");
+
+</script>
