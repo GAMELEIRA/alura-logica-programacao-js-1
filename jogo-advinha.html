@@ -35,34 +35,42 @@ FINALIDADE DO PROGRAMA: ESTE E UM JOGO DE ADVINHAÇÃO
 
     }
 
-    function sorteia(n) {
+    function sorteia() {
 
-        let numeroPensado = Math.round(Math.random() * n);
+        let numeroPensado = Math.round(Math.random() * 10);
 
-        return n;
+        return numeroPensado;
 
     }
 
-    let chute = parseInt(window.prompt("Digite seu chute!"));
 
-    let numeroPensado = sorteia(chute);
+    for (let tentativa = 0; tentativa < 3; tentativa++) {
 
-    if (chute == numeroPensado) {
+        let chute = parseInt(window.prompt("Digite seu chute!"));
 
-        window.document.write("Você acertou!");
+        let numeroPensado = sorteia();
 
-    } else {
+        console.log(numeroPensado);
 
-        window.document.write("Você errou! O número pensado foi " + numeroPensado);
+        if (chute == numeroPensado) {
 
-        if (chute > numeroPensado) {
+            window.document.write("Você acertou!");
 
-            window.document.write("O número pensado é menor!");
+            break;
 
         } else {
 
-            window.document.write("O número pensado é maior!");
-        }
+            mostraFrase("Você errou! O número pensado foi " + numeroPensado);
 
+            if (chute > numeroPensado) {
+
+                mostraFrase("O número é menor!");
+
+            } else {
+
+                mostraFrase("O número é maior!");
+            }
+
+        }
     }
 </script>

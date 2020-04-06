@@ -1,0 +1,55 @@
+<!--
+AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+DATA:06/04/2020
+HORA:12:57
+FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA QUE MONTA UMA TABUADA
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+    function pulaLinha() {
+
+        window.document.write("<br>");
+
+        window.document.write("<br>");
+
+    }
+
+    function mostraFrase(frase) {
+
+        window.document.write(frase);
+
+        pulaLinha();
+
+    }
+
+    const totalFamiliares = parseInt(window.prompt("Informe a quantiadade de familiares"));
+
+    let idadeTotal = 0;
+
+    let cont; 
+
+    for (cont = 0; totalFamiliares > cont; cont++) {
+
+        idadeTotal += parseInt(window.prompt("Informe a idade do familiar"));
+
+    }
+
+    const media = idadeTotal / cont;
+
+    mostraFrase(media);
+
+</script>
