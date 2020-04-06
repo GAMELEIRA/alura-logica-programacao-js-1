@@ -1,0 +1,55 @@
+<!--
+AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+DATA:03/04/2020
+HORA:13:44
+FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA SABER SE VOCÊ PODE OU NÃO DIRIGIR
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirigir</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+    function pulaLinha() {
+
+        window.document.write("<br>");
+
+        window.document.write("<br>");
+
+    }
+
+    function mostraFrase(frase) {
+
+        window.document.write(frase);
+
+        pulaLinha();
+
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+    if (idade => 18 && temCarteira == "S") {
+
+        alert("Pode dirigir!");
+
+    } else {
+
+        alert("Não pode dirigir!");
+
+    }
+
+
+</script>
