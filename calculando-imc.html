@@ -7,17 +7,20 @@ FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA CALCULAR O IMC
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculando o IMC</title>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 <script>
-    function pulaLinha(){
+    function pulaLinha() {
 
         window.document.write("<br>");
 
@@ -25,15 +28,15 @@ FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA CALCULAR O IMC
 
     }
 
-    function mostraFrase(frase){
+    function mostraFrase(frase) {
 
         window.document.write(frase);
-        
+
         pulaLinha();
 
     }
 
-    function calculaImc(peso, altura){
+    function calculaImc(peso, altura) {
 
         const imc = peso / (altura * altura);
 
@@ -48,5 +51,19 @@ FINALIDADE DO PROGRAMA: ESTE E UM PROGRAMA PARA CALCULAR O IMC
     const imc = calculaImc(peso, altura);
 
     mostraFrase(imc);
+
+    if (imc < 18.5) {
+
+        window.document.write("Você está abaixo do recomendado!");
+
+    } else if (imc > 35) {
+
+        window.document.write("Você está acima do recomendado");
+
+    } else {
+
+        window.document.write("Seu imc está excelente");
+
+    }
 
 </script>
