@@ -6,12 +6,60 @@ FINALIDADE DO PROGRAMA: ESTE E UM JOGO DE ADVINHAÇÃO
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advinha</title>
 </head>
+
 <body>
-    
+    <input>
+    <button>Compare com meu segredo!</button>
+
 </body>
+
 </html>
+<script>
+
+    let segredos = [Math.round(Math.random() * 10), Math.round(Math.random() * 10), Math.round(Math.random() * 10), Math.round(Math.random() * 10)];
+
+    segredos.push();
+
+    let segredo = Math.round(Math.random() * 10);
+
+    console.log(segredos);
+
+    let input = window.document.querySelector("input");
+
+    input.focus();
+
+    function verifica() {
+
+        for (let cont = 0; cont < segredos.length; cont++) {
+
+            if (input.value == segredos[cont]) {
+
+                alert("Acertou!");
+
+                break;
+
+            } else {
+
+                alert("Errou!");
+
+
+            }
+
+        }
+
+        input.value = "";
+        input.focus();
+    }
+
+
+    let button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
